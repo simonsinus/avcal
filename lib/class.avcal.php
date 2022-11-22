@@ -254,7 +254,7 @@ class avcal
             $localized_day_name = strftime('%A', $t);
             $day_name = strtolower(date('l', $t));
             $col .= '<col class="'. $day_name .'" />';
-            $th .= '<th scope="col" title="'. ucfirst($localized_day_name) .'">'. strtoupper($localized_day_name{0}) .'</th>';
+            $th .= '<th scope="col" title="'. ucfirst($localized_day_name) .'">'. strtoupper($localized_day_name[0]) .'</th>';
             $j = ($j == 7) ? 0 : $j;
         }
 
